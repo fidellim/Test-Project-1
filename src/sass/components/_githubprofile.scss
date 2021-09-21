@@ -1,0 +1,123 @@
+main {
+	max-width: 800px;
+	width: 100%;
+	margin: 2rem auto;
+}
+
+.inputUserContainer {
+	position: relative;
+	background-color: $darkBlue;
+	margin-bottom: 1.5rem;
+	border-radius: 12px;
+
+	.fas.fa-search {
+		color: $dimBlue;
+		font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		left: 1.5rem;
+		transform: translate(0, -50%);
+	}
+
+	.inputUser {
+		width: 100%;
+		padding: 1.5rem 0 1.5rem 5rem;
+		background-color: transparent;
+		border: 0;
+		font-size: 1rem;
+		color: white;
+
+		&::placeholder {
+			color: white;
+			font-size: 1rem;
+		}
+	}
+
+	.search {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		bottom: 0.5rem;
+		border-radius: 12px;
+		border: 0;
+		padding: 0 1.5rem;
+		background-color: $blue;
+		color: white;
+		font-size: 1rem;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+}
+
+.githubProfile {
+	border-radius: 12px;
+	background-color: $darkBlue;
+	padding: 2.25rem 2rem;
+
+	> :first-child {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+}
+
+// image
+.random {
+	display: block;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	margin-right: 3rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+.stats {
+	border-radius: 12px;
+	display: flex;
+	padding: 1.5rem 2rem;
+	margin-bottom: 1rem;
+	background-color: $veryDarkBlue;
+
+	.stat {
+		flex: 1;
+
+		> :first-child {
+			opacity: 0.7;
+		}
+
+		> :last-child {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+	}
+}
+
+.projects {
+	margin-top: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.project {
+	background-color: $violet;
+	padding: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $blue;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}

@@ -1,0 +1,20 @@
+@import "abstract/variables";
+
+@import "components/button";
+@import "components/app";
+@import "components/header";
+@import "components/githubprofile";
+
+@import "base/reset";
+@import "base/typography";
+
+body {
+	background-color: $veryDarkBlue;
+	color: white;
+	font-size: 16px;
+}
+
+* {
+	font-family: $SpaceMono;
+	outline: 0;
+}
