@@ -70,7 +70,7 @@ main {
 }
 
 // image
-.random {
+.githubProfileImage {
 	display: block;
 	width: 8rem;
 	height: 8rem;
@@ -104,6 +104,7 @@ main {
 .projects {
 	margin-top: 1rem;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 }
 
@@ -120,4 +121,11 @@ main {
 	&:active {
 		transform: scale(0.98);
 	}
+}
+
+.githubError {
+	text-align: center;
+	border-radius: 12px;
+	background-color: $darkBlue;
+	padding: 2.25rem 2rem;
 }
