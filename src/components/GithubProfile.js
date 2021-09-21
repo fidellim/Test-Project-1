@@ -33,7 +33,7 @@ const GithubProfile = ({
 					<input
 						type="text"
 						className="inputUser"
-						placeholder="Search Github username_"
+						placeholder="Github username"
 						value={user}
 						onChange={updateSearch}
 					/>
@@ -83,7 +83,7 @@ const GithubProfile = ({
 						{repos.map((repo) => {
 							return (
 								<div key={repo.name} className="project">
-									{repo.name}
+									<p>{repo.name}</p>
 								</div>
 							);
 						})}

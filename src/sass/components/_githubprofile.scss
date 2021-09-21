@@ -2,6 +2,7 @@ main {
 	max-width: 800px;
 	width: 100%;
 	margin: 2rem auto;
+	padding: 1rem;
 }
 
 .inputUserContainer {
@@ -121,6 +122,10 @@ main {
 	&:active {
 		transform: scale(0.98);
 	}
+
+	p {
+		word-break: break-all;
+	}
 }
 
 .githubError {
@@ -128,4 +133,27 @@ main {
 	border-radius: 12px;
 	background-color: $darkBlue;
 	padding: 2.25rem 2rem;
+}
+
+@media (max-width: 465px) {
+	.stats {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.githubProfileImage {
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width: 390px) {
+	.inputUserContainer {
+		.fas.fa-search {
+			left: 0.75rem;
+		}
+
+		.inputUser {
+			padding: 1.5rem 0 1.5rem 3.5rem;
+		}
+	}
 }
