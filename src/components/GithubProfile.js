@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GithubProfile = ({
 	query,
@@ -9,6 +10,7 @@ const GithubProfile = ({
 	updateSearch,
 	user,
 	isUserExist,
+	handleRepo,
 }) => {
 	const getMonth = [
 		"Jan",
@@ -37,6 +39,7 @@ const GithubProfile = ({
 						value={user}
 						onChange={updateSearch}
 					/>
+
 					<button className="search" onClick={handleSearch}>
 						Search
 					</button>
@@ -82,9 +85,15 @@ const GithubProfile = ({
 					<div className="projects">
 						{repos.map((repo) => {
 							return (
-								<div key={repo.name} className="project">
-									<p>{repo.name}</p>
-								</div>
+								<Link
+									key={repo.name}
+									to={`/${data.login}/${repo.name}`}
+									onClick={() => handleRepo(repo.name)}
+								>
+									<div className="project">
+										<p>{repo.name}</p>
+									</div>
+								</Link>
 							);
 						})}
 					</div>
