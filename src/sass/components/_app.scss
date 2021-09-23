@@ -4,20 +4,3 @@
 	// to add background color animation effect on light and dark mode
 	transition: all 0.5s ease;
 }
-
-@media (min-width: 975px) {
-	.app {
-		width: 100%;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-	}
-}
-
-@media (min-width: 975px) and (max-height: 700px) {
-	.app {
-		margin: 2rem 0;
-	}
-}
