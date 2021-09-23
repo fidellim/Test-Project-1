@@ -1,3 +1,10 @@
+.app {
+	background-color: $veryDarkBlue;
+	min-height: 100vh;
+	// to add background color animation effect on light and dark mode
+	transition: all 0.5s ease;
+}
+
 @media (min-width: 975px) {
 	.app {
 		width: 100%;

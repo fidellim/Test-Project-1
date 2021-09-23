@@ -1,0 +1,87 @@
+.repoInfoContainer {
+	background-color: $darkBlue;
+	border-radius: 12px;
+	padding: 1.5rem;
+
+	> h1,
+	> p,
+	> h3 {
+		margin-bottom: 0.75rem;
+	}
+
+	> p {
+		background-color: $veryDarkBlue;
+		border-radius: 12px;
+		padding: 1rem;
+	}
+}
+
+.repoLink {
+	border-radius: 12px;
+	border: 0;
+	padding: 1rem 1.5rem;
+	background-color: $blue;
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}
+
+.repoContributors {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.repoContributor {
+	background-color: $violet;
+	padding: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 0;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	&:hover {
+		background-color: $blue;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+
+	hr {
+		width: 100%;
+	}
+}
+
+.backBtn {
+	border: 0;
+	border-radius: 12px;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	background-color: $blue;
+	color: white;
+	font-weight: 700;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}

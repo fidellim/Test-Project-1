@@ -1,15 +1,16 @@
 @import "abstract/variables";
 
-@import "components/button";
 @import "components/app";
 @import "components/header";
 @import "components/githubprofile";
+@import "components/repoInfo";
 
 @import "base/reset";
 @import "base/typography";
 
+@import "themes/light";
+
 body {
-	background-color: $veryDarkBlue;
 	color: white;
 	font-size: 16px;
 }
