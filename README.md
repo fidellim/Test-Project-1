@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Test Interview Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Built with](#built-with)
+  - [Links](#links)
+  - [Screenshot](#screenshot)
+- [Intructions](#my-process)
+  - [Setup Development](#built-with)
+  - [Test Project](#what-i-learned)
+  - [Run Project](#continued-development)
+- [Author](#author)
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+### The challenge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This test has been designed for you to show us your ability to design, code, test, and document a small service.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built with
 
-### `yarn test`
+- **Frontend** - React, SASS
+- **Testing** -
+- **Other** - Docker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Links
 
-### `yarn build`
+- GitHub Repo: [Repo](https://github.com/fidellim/Test-Project-1)
+- Live Site URL: [Live Site](https://fidellim-test-project-1.netlify.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Desktop Dark](./src/images/desktop_dark.png)
+![Desktop Light](./src/images/desktop_light.png)
+![Mobile Light](./src/images/mobile_light.png)
+![Mobile Dark](./src/images/mobile_dark.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instructions
 
-### `yarn eject`
+### Setup Development
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+Setup Development
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Test Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+Test Project
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Run Project
 
-## Learn More
+```
+Run Project
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Fidel Lim Portfolio](https://fidellim-portfolio.netlify.app/)
+- Github - [fidellim](https://github.com/fidellim)
