@@ -1,0 +1,71 @@
+.light {
+	background-color: $lightGray;
+
+	// -------------------------------
+	// header
+	header {
+		background-color: $white;
+		box-shadow: 0 0 10px rgb(165, 165, 165);
+		color: black;
+	}
+
+	.logo__image {
+		filter: brightness(0) saturate(100%);
+	}
+
+	// -------------------------------
+	// githubProfile
+	.inputUserContainer {
+		background-color: white;
+
+		.inputUser {
+			color: $grayishBlue;
+
+			&::placeholder {
+				color: $grayishBlue;
+			}
+		}
+	}
+
+	.githubProfile {
+		background-color: $white;
+		color: black;
+	}
+
+	.stats {
+		background-color: $lightGray;
+	}
+
+	.project {
+		background-color: $grayishDarkBlue;
+
+		&:hover {
+			background-color: $blue;
+			color: white;
+		}
+	}
+
+	.githubError {
+		background-color: $darkBlue;
+	}
+
+	// -------------------------------
+	// githubRepoInfo
+	.repoInfoContainer {
+		background-color: $white;
+		color: black;
+
+		> p {
+			background-color: $lightGray;
+		}
+	}
+
+	.repoContributor {
+		background-color: $grayishDarkBlue;
+
+		&:hover {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+}
