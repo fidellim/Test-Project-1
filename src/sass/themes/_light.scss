@@ -66,6 +66,15 @@
 		&:hover {
 			background-color: $blue;
 			color: $white;
+
+			hr {
+				background-color: white;
+			}
+		}
+
+		hr {
+			width: 100%;
+			background-color: black;
 		}
 	}
 }
