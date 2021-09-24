@@ -47,7 +47,7 @@ header {
 	top: 50%;
 	right: 3rem;
 	transform: translateY(-50%);
-	transition: all 0.3s ease;
+	transition: transform 0.3s ease;
 }
 
 .fa-sun.hide {
@@ -60,7 +60,7 @@ header {
 	right: 3rem;
 	opacity: 1;
 	transform: translateY(-50%);
-	transition: all 0.3s ease;
+	transition: transform 0.3s ease;
 }
 
 .fa-moon.hide {
