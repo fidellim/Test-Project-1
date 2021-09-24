@@ -12,6 +12,7 @@
   - [Test Project](#test-project)
   - [Run Project](#run-project)
   - [Deploy Project](#deploy-project)
+- [Resources](#resources)
 - [Author](#author)
 
 ## Overview
@@ -63,6 +64,10 @@ Run Project
 ```
 Deploy Project
 ```
+
+## Resources
+
+- [Preconnect to required origin](https://www.afasterweb.com/2018/04/11/two-tips-for-using-3rd-party-fonts/) - using `<link>` instead of `@import` for using 3rd-party provider.
 
 ## Author
 
