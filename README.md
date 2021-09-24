@@ -7,10 +7,11 @@
   - [Built with](#built-with)
   - [Links](#links)
   - [Screenshot](#screenshot)
-- [Intructions](#my-process)
-  - [Setup Development](#built-with)
-  - [Test Project](#what-i-learned)
-  - [Run Project](#continued-development)
+- [Intructions](#instructions)
+  - [Setup Development](#setup-development)
+  - [Test Project](#test-project)
+  - [Run Project](#run-project)
+  - [Deploy Project](#deploy-project)
 - [Author](#author)
 
 ## Overview
@@ -22,7 +23,7 @@ This test has been designed for you to show us your ability to design, code, tes
 ### Built with
 
 - **Frontend** - React, SASS
-- **Testing** -
+- **Testing** - Lighthouse (Performance, Accessibility, Best Practices, SEO)
 - **Other** - Docker
 
 ### Links
@@ -55,6 +56,12 @@ Test Project
 
 ```
 Run Project
+```
+
+### Deploy Project
+
+```
+Deploy Project
 ```
 
 ## Author
