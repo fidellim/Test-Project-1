@@ -10,6 +10,7 @@
 - [Intructions](#instructions)
   - [Setup Development](#setup-development)
   - [Test Project](#test-project)
+    - [Lighthouse](#lighthouse)
   - [Run Project](#run-project)
   - [Deploy Project](#deploy-project)
 - [Resources](#resources)
@@ -54,6 +55,8 @@ To setup the project for development, please follow these steps:
    2. yarn: `yarn start`
 
 ### Test Project
+
+#### Lighthouse
 
 If you would like to test the app's performance, accessibility, best practices, and SEO, there is Google Lighthouse.
 
