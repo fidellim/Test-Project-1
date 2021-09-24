@@ -64,19 +64,34 @@ Follow these steps to check the app's performance, accessibility, best practices
 3. Once the app is running in Chrome, right click the app and press "Inspect".
 4. Locate and press "Lighthouse". It is usually located at the top section of Chrome Dev Tools. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_location.png">
 5. Then, choose any category that you would want to generate a report. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_generate_report.png">
-6. After a few seconds, your report will be generated. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png">
+6. After a few seconds, your report will be generated. Within this report, Lighthouse will inform you what went wrong and recommend ways to improve your app's performance, accessibility, best practices, and SEO. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png">
 
 ### Run Project
 
-```
-Run Project
-```
+To run the project in a production build, please follow these steps:
+
+1. Make sure you have a build folder for the project.
+   1. npm: `npm build`
+   2. yarn: `yarn build`
 
 ### Deploy Project
 
-```
-Deploy Project
-```
+If you would like to deploy the project, please follow these steps:
+
+1. The platform that I will use and explain is Netlify. You can also use other platforms like [Vercel](https://vercel.com/guides/deploying-react-with-vercel-cra), [Firebase](https://dzone.com/articles/react-apps-firebase), [GitHub Pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f), and more.
+2. Create an account. If you already have, just login.
+3. There are two ways to deploy in Netlify, either through GitHub/GitLab/Bitbucket Continuous Deployment or Drag & Drop Deployment.
+
+GitHub/GitLab/Bitbucket Continuous Deployment
+
+1. Press the "New site from Git". Choose any Git repository manager (GitHub/GitLab/Bitbucket) you prefer. Make sure you have the repository of the project on your preferred option.
+2. Now that you've connected Netlify and your preferred Git repository manager, choose the repository of the project. Then, configure your settings. Make sure the build command is `npm run build` or `yarn build` and publish directory is `dist` for npm or `build` for yarn. <img style="display:block" width="400px" height="auto" src="./src/images/build_settings.png">
+3. Wait for a few minutes to build the site. After that you can access the project. <img style="display:block" width="600px" height="auto" src="./src/images/project_deploy.png">
+
+Drag & Drop Deployment
+
+1. This would would be the easier way. All you need is the build folder of the project. Then go to the "Sites" section. Once you are there, drag & drop the folder to the designated place. <img style="display:block" width="1200px" height="auto" src="./src/images/drag_n_drop.png">
+2. After a few seconds/mins, you will be able to access it. <img style="display:block" width="600px" height="auto" src="./src/images/project_deploy.png">
 
 ## Resources
 
