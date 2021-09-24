@@ -82,13 +82,13 @@ If you would like to deploy the project, please follow these steps:
 2. Create an account. If you already have, just login.
 3. There are two ways to deploy in Netlify, either through GitHub/GitLab/Bitbucket Continuous Deployment or Drag & Drop Deployment.
 
-GitHub/GitLab/Bitbucket Continuous Deployment
+`GitHub/GitLab/Bitbucket Continuous Deployment`
 
 1. Press the "New site from Git". Choose any Git repository manager (GitHub/GitLab/Bitbucket) you prefer. Make sure you have the repository of the project on your preferred option.
-2. Now that you've connected Netlify and your preferred Git repository manager, choose the repository of the project. Then, configure your settings. Make sure the build command is `npm run build` or `yarn build` and publish directory is `dist` for npm or `build` for yarn. <img style="display:block" width="400px" height="auto" src="./src/images/build_settings.png">
+2. Now that you've connected Netlify and your preferred Git repository manager, choose the repository of the project. Then, configure your settings. Make sure the build command is `npm run build` or `yarn build` and publish directory is `dist` for npm or `build` for yarn. <br/><img style="display:block" width="400px" height="auto" src="./src/images/build_settings.png">
 3. Wait for a few minutes to build the site. After that you can access the project. <img style="display:block" width="600px" height="auto" src="./src/images/project_deploy.png">
 
-Drag & Drop Deployment
+`Drag & Drop Deployment`
 
 1. This would would be the easier way. All you need is the build folder of the project. Then go to the "Sites" section. Once you are there, drag & drop the folder to the designated place. <img style="display:block" width="1200px" height="auto" src="./src/images/drag_n_drop.png">
 2. After a few seconds/mins, you will be able to access it. <img style="display:block" width="600px" height="auto" src="./src/images/project_deploy.png">
