@@ -1,4 +1,4 @@
-# Test Interview Project
+# Test Interview Project - Fidel Lim
 
 ## Table of contents
 
@@ -43,15 +43,28 @@ This test has been designed for you to show us your ability to design, code, tes
 
 ### Setup Development
 
-```
-Setup Development
-```
+To setup the project for development, please follow these steps:
+
+1. Download my project as a [zip](https://github.com/fidellim/Test-Project-1) or clone my repository using this command `git clone https://github.com/fidellim/Test-Project-1.git`
+2. Once you are on the directory of the project, install all dependencies:
+   1. npm: `npm install`
+   2. yarn: `yarn install`
+3. After that you can start running the project in development server using this command:
+   1. npm: `npm start`
+   2. yarn: `yarn start`
 
 ### Test Project
 
-```
-Test Project
-```
+If you would like to test the app's performance, accessibility, best practices, and SEO, there is Google Lighthouse.
+
+Follow these steps to check the app's performance, accessibility, best practices, and SEO:
+
+1. Use Google Chrome (Incognito Mode) to run the app. It is suggested to use Incognito window as Chrome extensions might negatively affect the page's/app's load performance.
+2. Make sure the app is running. You can use `npm/yarn start` for now.
+3. Once the app is running in Chrome, right click the app and press "Inspect".
+4. Locate and press "Lighthouse". It is usually located at the top section of Chrome Dev Tools. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_location.png">
+5. Then, choose any category that you would want to generate a report. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_generate_report.png">
+6. After a few seconds, your report will be generated. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png">
 
 ### Run Project
 
