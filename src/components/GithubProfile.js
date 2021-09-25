@@ -6,9 +6,6 @@ const GithubProfile = ({
 	data,
 	repos,
 	userCreation,
-	handleSearch,
-	updateSearch,
-	user,
 	isUserExist,
 	handleRepo,
 }) => {
@@ -28,25 +25,9 @@ const GithubProfile = ({
 	];
 
 	return (
-		<main>
-			<div className="inputUserContainer">
-				<form>
-					<i className="fas fa-search"></i>
-					<input
-						type="text"
-						className="inputUser"
-						placeholder="Github username"
-						value={user}
-						onChange={updateSearch}
-					/>
-
-					<button className="search" onClick={handleSearch}>
-						Search
-					</button>
-				</form>
-			</div>
+		<main data-testid="main">
 			{isUserExist === "true" && query && (
-				<div className="githubProfile">
+				<div className="githubProfile" data-testid="githubProfile">
 					<div>
 						<img
 							src={
@@ -100,7 +81,7 @@ const GithubProfile = ({
 				</div>
 			)}
 			{isUserExist === "false" && query && (
-				<div className="githubError">
+				<div className="githubError" data-testid="noGithubProfile">
 					<h1>This Github Profile doesn't exist.</h1>
 				</div>
 			)}
