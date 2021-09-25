@@ -67,15 +67,24 @@ Follow these steps to check the app's performance, accessibility, best practices
 3. Once the app is running in Chrome, right click the app and press "Inspect".
 4. Locate and press "Lighthouse". It is usually located at the top section of Chrome Dev Tools. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_location.png">
 5. Then, choose any category that you would want to generate a report. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_generate_report.png">
-6. After a few seconds, your report will be generated. Within this report, Lighthouse will inform you what went wrong and recommend ways to improve your app's performance, accessibility, best practices, and SEO. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png">
+6. After a few seconds, your report will be generated. Within this report, Lighthouse will inform you what went wrong and recommend ways to improve your app's performance, accessibility, best practices, and SEO. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png"><br/><img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data_local.png">
 
 ### Run Project
 
 To run the project in a production build, please follow these steps:
 
+`Static server`
+
 1. Make sure you have a build folder for the project.
    1. npm: `npm build`
    2. yarn: `yarn build`
+2. Add serve dependency
+   1. npm: `npm install -g serve`
+   2. yarn: `yarn global add serve`
+3. Finally, you can run with this command:
+   1. npm/yarn: `npx serve -s build`
+
+`Docker`
 
 ### Deploy Project
 
@@ -99,6 +108,7 @@ If you would like to deploy the project, please follow these steps:
 ## Resources
 
 - [Preconnect to required origin](https://www.afasterweb.com/2018/04/11/two-tips-for-using-3rd-party-fonts/) - using `<link>` instead of `@import` for using 3rd-party provider.
+- [Front-end Testing](https://css-tricks.com/front-end-testing-is-for-everyone/) - get an overview of the different kinds of testing for front-end.
 
 ## Author
 
