@@ -49,43 +49,47 @@ const RepoInfo = ({ repoName, user }) => {
 	};
 
 	return (
-		<main>
-			<Link to="/">
-				<button className="backBtn">
-					<i className="fas fa-chevron-left"></i> Back
-				</button>
-			</Link>
-			<div className="repoInfoContainer">
-				<h1>{name}</h1>
-				{description && <p>{desc}</p>}
-				{!description && <p>No description</p>}
-				<h3>Contributor/s</h3>
-				<div className="repoContributors">
-					{contributors.map((contributor) => {
-						return (
-							<a
-								key={contributor.login}
-								href={contributor.html_url}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<button className="repoContributor">
-									<h3>{contributor.login}</h3>
-									<hr />
-									<h3>
-										Total Commits: <span>4</span>
-									</h3>
-								</button>
+		<main data-testid="repoInfoMain">
+			{user && (
+				<div data-testid="repoInfo">
+					<Link to="/">
+						<button className="backBtn">
+							<i className="fas fa-chevron-left"></i> Back
+						</button>
+					</Link>
+					<div className="repoInfoContainer">
+						<h1>{name}</h1>
+						{description && <p>{desc}</p>}
+						{!description && <p>No description</p>}
+						<h3>Contributor/s</h3>
+						<div className="repoContributors">
+							{contributors.map((contributor) => {
+								return (
+									<a
+										key={contributor.login}
+										href={contributor.html_url}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<button className="repoContributor">
+											<h3>{contributor.login}</h3>
+											<hr />
+											<h3>
+												Total Commits: <span>4</span>
+											</h3>
+										</button>
+									</a>
+								);
+							})}
+						</div>
+						<button className="repoLink">
+							<a href={html_url} target="_blank" rel="noreferrer">
+								GitHub Repo
 							</a>
-						);
-					})}
+						</button>
+					</div>
 				</div>
-				<button className="repoLink">
-					<a href={html_url} target="_blank" rel="noreferrer">
-						GitHub Repo
-					</a>
-				</button>
-			</div>
+			)}
 		</main>
 	);
 };
