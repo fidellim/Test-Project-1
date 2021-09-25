@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GithubProfile from "./GithubProfile";
 import Header from "./Header";
 import RepoInfo from "./RepoInfo";
+import SearchBar from "./SearchBar";
 
 const App = () => {
 	const [user, setUser] = useState("");
@@ -19,7 +20,7 @@ const App = () => {
 		const api = `https://api.github.com/users/${query}`;
 		const apiRepos = `https://api.github.com/users/${query}/repos?sort=created`;
 
-		const getUserData = async () => {
+		const getUserData = async (api) => {
 			const response = await fetch(api);
 
 			if (response.ok) {
@@ -51,7 +52,7 @@ const App = () => {
 
 		// only run if query has truthy value
 		if (query) {
-			getUserData();
+			getUserData(api);
 		}
 	}, [query]);
 
@@ -89,14 +90,16 @@ const App = () => {
 				/>
 				<Switch>
 					<Route exact path="/">
+						<SearchBar
+							user={user}
+							updateSearch={updateSearch}
+							handleSearch={handleSearch}
+						/>
 						<GithubProfile
 							data={userData}
 							repos={userRepos}
 							userCreation={userCreated}
 							query={query}
-							user={user}
-							updateSearch={updateSearch}
-							handleSearch={handleSearch}
 							isUserExist={isUserExist}
 							handleRepo={handleRepo}
 						/>
