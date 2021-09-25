@@ -25,7 +25,7 @@ This test has been designed for you to show us your ability to design, code, tes
 ### Built with
 
 - **Frontend** - React, SASS
-- **Testing** - Lighthouse (Performance, Accessibility, Best Practices, SEO)
+- **Testing** - Lighthouse (Performance, Accessibility, Best Practices, SEO), Jest, React Testing Library
 - **Other** - Docker
 
 ### Links
@@ -109,6 +109,7 @@ If you would like to deploy the project, please follow these steps:
 
 - [Preconnect to required origin](https://www.afasterweb.com/2018/04/11/two-tips-for-using-3rd-party-fonts/) - using `<link>` instead of `@import` for using 3rd-party provider.
 - [Front-end Testing](https://css-tricks.com/front-end-testing-is-for-everyone/) - get an overview of the different kinds of testing for front-end.
+- [React Testing Tutorial](https://youtu.be/ML5egqL3YFE) - a tutorial on how to test components in React.
 
 ## Author
 
