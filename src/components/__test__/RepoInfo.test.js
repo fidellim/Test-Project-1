@@ -20,7 +20,7 @@ test("Show RepoInfo with information", () => {
 	expect(repoInfo).toBeInTheDocument();
 });
 
-// checks if component will render
+// checks if component will not render
 test("Show RepoInfo without information", () => {
 	render(
 		<Router>

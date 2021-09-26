@@ -32,13 +32,12 @@ const userCreation = {
 };
 
 const handleRepo = (repo) => {
-	// setRepoName(repo);
 	return repo;
 };
 
 test("Displays github profile if data exists", () => {
 	render(
-		// had to add router component bc it keeps causing error
+		// add router component bc it keeps causing error
 		<Router>
 			<GithubProfile
 				query="fidellim"
@@ -51,7 +50,6 @@ test("Displays github profile if data exists", () => {
 		</Router>
 	);
 
-	// get element with data-test-id = inputUser
 	const githubProfile = screen.getByTestId("githubProfile");
 	// checks if it exists
 	expect(githubProfile).toBeInTheDocument();

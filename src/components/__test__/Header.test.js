@@ -14,8 +14,10 @@ test("Renders Title", () => {
 			<Header />
 		</Router>
 	);
-	// get element with data-test-id = inputUser
+
 	const title = screen.getByText(/GitHub Profile/i);
+	const sun = screen.getByTestId("sun");
 	// checks if it exists
 	expect(title).toBeInTheDocument();
+	expect(sun).toBeInTheDocument();
 });
