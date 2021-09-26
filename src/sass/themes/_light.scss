@@ -61,6 +61,14 @@
 		}
 	}
 
+	.repoContributors {
+		color: black;
+
+		> p {
+			background-color: $lightGray;
+		}
+	}
+
 	.repoContributor {
 		background-color: $grayishDarkBlue;
 
