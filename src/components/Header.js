@@ -14,10 +14,12 @@ const Header = ({ goToHome, isToggled, handleIsToggled }) => {
 			<i
 				className={`fas ${!isToggled ? "fa-sun" : "fa-sun hide"}`}
 				onClick={handleIsToggled}
+				data-testid="sun"
 			></i>
 			<i
 				className={`fas ${isToggled ? "fa-moon" : "fa-moon hide"}`}
 				onClick={handleIsToggled}
+				data-testid="moon"
 			></i>
 		</header>
 	);
