@@ -11,6 +11,7 @@
   - [Setup Development](#setup-development)
   - [Test Project](#test-project)
     - [Lighthouse](#lighthouse)
+    - [Jest & React Testing Library](#jest-and-react-testing-library)
   - [Run Project](#run-project)
   - [Deploy Project](#deploy-project)
 - [Resources](#resources)
@@ -69,11 +70,20 @@ Follow these steps to check the app's performance, accessibility, best practices
 5. Then, choose any category that you would want to generate a report. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_generate_report.png">
 6. After a few seconds, your report will be generated. Within this report, Lighthouse will inform you what went wrong and recommend ways to improve your app's performance, accessibility, best practices, and SEO. <img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data.png"><br/><img style="display:block" width="400px" height="auto" src="./src/images/lighthouse_data_local.png">
 
+#### Jest And React Testing Library
+
+To test react components, please follow these steps:
+
+1. Run all test files do this command:
+   1. npm: `npm test --watchAll`
+   2. yarn: `yarn test --watchAll`
+2. If you would like to stop testing or exit watch mode, just press `q`.
+
 ### Run Project
 
 To run the project in a production build, please follow these steps:
 
-`Static server`
+`Static Server`
 
 1. Make sure you have a build folder for the project.
    1. npm: `npm build`
@@ -110,6 +120,10 @@ If you would like to deploy the project, please follow these steps:
 - [Preconnect to required origin](https://www.afasterweb.com/2018/04/11/two-tips-for-using-3rd-party-fonts/) - using `<link>` instead of `@import` for using 3rd-party provider.
 - [Front-end Testing](https://css-tricks.com/front-end-testing-is-for-everyone/) - get an overview of the different kinds of testing for front-end.
 - [React Testing Tutorial](https://youtu.be/ML5egqL3YFE) - a tutorial on how to test components in React.
+- [List Commits using GitHub API](https://docs.github.com/en/rest/reference/repos#list-commits) - a guide on how to fetch a list commits of repo using octokit.
+- [List Commits using GitHub API 2](https://www.pluralsight.com/guides/fetching-most-recent-commits-from-all-repos-using-the-github-api) - a guide on how to fetch a list commits of repo using octokit.
+- [Groupby using Reduce](https://sebhastian.com/javascript-group-by/) - How to group an array using reduce function.
+- [Contributor's commit/s](https://docs.github.com/en/rest/reference/repos#get-all-contributor-commit-activity) - A guide on how to check each contributor's commit/s.
 
 ## Author
 
