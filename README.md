@@ -96,6 +96,9 @@ To run the project in a production build, please follow these steps:
 
 `Docker`
 
+1. If you don't have docker on your local machine, you can download it [here](https://www.docker.com/get-started).
+2. If you are using Visual Studio Code, you can download Docker extension as well. <img style="display:block" width="600px" height="auto" src="./src/images/docker_extension.png">
+
 ### Deploy Project
 
 If you would like to deploy the project, please follow these steps:
