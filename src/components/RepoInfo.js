@@ -1,15 +1,21 @@
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Octokit } from "@octokit/core";
 
 const RepoInfo = ({ repoName, user }) => {
 	const [repoData, setRepoData] = useState({});
 	const [contributors, setContributors] = useState([]);
 	const { name, description, html_url } = repoData;
 	const [desc, setDesc] = useState("");
+	const [commits, setCommits] = useState({});
 
 	useEffect(() => {
 		const apiRepo = `https://api.github.com/repos/${user}/${repoName}`;
 		const apiRepoContributors = `https://api.github.com/repos/${user}/${repoName}/contributors`;
+		// use to fetch commits
+		const octokit = new Octokit({
+			auth: "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",
+		});
 
 		const getRepoData = async () => {
 			const response = await fetch(apiRepo);
@@ -18,10 +24,13 @@ const RepoInfo = ({ repoName, user }) => {
 				const data = await response.json();
 				setRepoData(data);
 
-				let myDataDesc = data.description.split(" ");
-				setDesc(descChecker(myDataDesc));
+				// check if there is description
+				if (data.description) {
+					let myDataDesc = data.description.split(" ");
+					setDesc(descChecker(myDataDesc));
 
-				getRepoContributors();
+					getRepoContributors();
+				}
 			}
 		};
 
@@ -31,7 +40,32 @@ const RepoInfo = ({ repoName, user }) => {
 			if (response.ok) {
 				const data = await response.json();
 				setContributors(data);
+
+				getCommits();
 			}
+		};
+
+		const getCommits = async () => {
+			const response = await octokit.request(
+				"GET /repos/{owner}/{repo}/commits",
+				{
+					owner: user,
+					repo: repoName,
+					per_page: 100,
+				}
+			);
+
+			// if author name is not a key create
+			// and increment value once it occurs again
+			setCommits(
+				response.data.reduce((acc, currentValue) => {
+					if (!acc[currentValue["author"]["login"]]) {
+						acc[currentValue["author"]["login"]] = 0;
+					}
+					acc[currentValue["author"]["login"]] += 1;
+					return acc;
+				}, {})
+			);
 		};
 
 		getRepoData();
@@ -75,7 +109,8 @@ const RepoInfo = ({ repoName, user }) => {
 											<h3>{contributor.login}</h3>
 											<hr />
 											<h3>
-												Total Commits: <span>4</span>
+												Commits:
+												<span> {commits[contributor.login]}</span>
 											</h3>
 										</button>
 									</a>
