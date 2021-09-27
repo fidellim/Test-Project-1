@@ -13,6 +13,8 @@
     - [Lighthouse](#lighthouse)
     - [Jest & React Testing Library](#jest-and-react-testing-library)
   - [Run Project](#run-project)
+    - [Static Server](#static-server)
+    - [Docker](#docker)
   - [Deploy Project](#deploy-project)
 - [Resources](#resources)
 - [Author](#author)
@@ -81,9 +83,9 @@ To test react components, please follow these steps:
 
 ### Run Project
 
-To run the project in a production build, please follow these steps:
+#### `Static Server`
 
-`Static Server`
+To run the project in a production build, please follow these steps:
 
 1. Make sure you have a build folder for the project.
    1. npm: `npm build`
@@ -94,10 +96,16 @@ To run the project in a production build, please follow these steps:
 3. Finally, you can run with this command:
    1. npm/yarn: `npx serve -s build`
 
-`Docker`
+#### `Docker`
+
+To run project in Docker, please follow these steps:
 
 1. If you don't have docker on your local machine, you can download it [here](https://www.docker.com/get-started).
 2. If you are using Visual Studio Code, you can download Docker extension as well. <img style="display:block" width="600px" height="auto" src="./src/images/docker_extension.png">
+3. After that, create a docker image: `docker build -t name_of_image .`
+4. Then, create a docker container: `docker run --publish 3000:3000 --name name_of_container name_of_image_created`
+5. That's it! You can now run the project on `localhost:3000`
+6. You can also check out some commands on the Dockerfile I made.
 
 ### Deploy Project
 
@@ -127,6 +135,9 @@ If you would like to deploy the project, please follow these steps:
 - [List Commits using GitHub API 2](https://www.pluralsight.com/guides/fetching-most-recent-commits-from-all-repos-using-the-github-api) - a guide on how to fetch a list commits of repo using octokit.
 - [Groupby using Reduce](https://sebhastian.com/javascript-group-by/) - How to group an array using reduce function.
 - [Contributor's commit/s](https://docs.github.com/en/rest/reference/repos#get-all-contributor-commit-activity) - A guide on how to check each contributor's commit/s.
+- [Learn Docker](https://youtu.be/gAkwW2tuIqE) - Learn what docker is.
+- [How to build project in Docker](https://youtu.be/3xDAU5cvi5E) - A tutorial on how to build your project in Docker.
+- [How to build project in Docker 2](https://youtu.be/xtllpDEOw4w) - Another tutorial on how to build your project in Docker.
 
 ## Author
 
