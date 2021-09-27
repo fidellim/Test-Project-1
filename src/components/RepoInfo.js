@@ -22,8 +22,6 @@ const RepoInfo = ({ repoName, user }) => {
 				if (data.description) {
 					let myDataDesc = data.description.split(" ");
 					setDesc(descChecker(myDataDesc));
-
-					getRepoContributors();
 				}
 			}
 		};
@@ -37,6 +35,7 @@ const RepoInfo = ({ repoName, user }) => {
 		};
 
 		getRepoData();
+		getRepoContributors();
 	}, [repoName]);
 
 	const descChecker = (arr) => {
